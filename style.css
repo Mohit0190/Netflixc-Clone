@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Cypro+Minoan&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/d7af077c-af5a-4055-8f9a-740a43588583/95bae10c-9773-4447-af4e-612a244231bd/IN-en-20230717-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-size: cover;
+    font-family: 'Noto Sans Cypro Minoan', sans-serif;
+}
+.overlay{
+    padding:1px;
+    background: rgba(0, 0, 0, 0.5);
+    height:100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2vw;
+    margin-top: 30px;
+   
+}
+.nav>ul{
+   display: flex;
+   gap: 3vmax;
+   align-items: center;
+}
+ul>li{
+    list-style: none;
+}
+li>select{
+   
+    padding: 2px 6px;
+    background-color:black;
+    color: white;
+    border-color: black;
+    font-weight: 300;
+    font-size: 15px;
+    border-radius: 5px;
+}
+li>button{
+   
+    padding: 4px 10px;
+    
+    color: white;
+    background-color: red;
+    border-color: red;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+main>section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 80vh;
+    flex-wrap: wrap;
+}
+main>section>h1{
+    font-size: 5vw;
+    color: white;
+    font-weight: 800;
+    ;
+    
+}
+main>section>h2{
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+}
+main>section>h3{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+section>div{
+    display: flex;
+    flex-wrap: wrap;
+     gap:5px;
+}
+
+section>div>input{
+    padding: 10px 10px;
+    height: 50px;
+    width: 350px;
+    background: rgba(0, 0, 0, 0.5);
+   color: white;
+   font-size: 15px;
+}
+section>div>button{
+    padding: 6px 6px;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
+/* Media query */
+@media (max-width: 600px) {
+    nav>img{
+        width:120px;
+    }
+    main>section{
+       overflow: hidden;
+       padding: 10px;;
+    }
+}
