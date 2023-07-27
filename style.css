@@ -7,7 +7,6 @@
 html,
 body {
   width: 100%;
- 
 
   font-family: "Noto Sans Cypro Minoan", sans-serif;
 }
@@ -65,7 +64,6 @@ main > section {
   gap: 20px;
   height: 50vh;
   flex-wrap: wrap;
-  
 }
 main > section > h1 {
   font-size: 3vw;
@@ -114,27 +112,22 @@ section > div > button {
   border-top: 4px solid grey;
   border-bottom: 4px solid grey;
 }
-.section2>div{
-    display: flex;
-    flex-direction: column;
-    flex-direction: column;
-    justify-content: center;
-    height: 30vw;
-  
-    
+.section2 > div {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  height: 30vw;
 }
-section>img{
-    width: 30%;
-    height: 10%;
-    
+section > img {
+  width: 30%;
+  height: 10%;
 }
 .section2 > div > h1 {
   color: white;
   font-size: 2.3vw;
-  
+
   width: 30vw;
-  
- 
 }
 .section2 > div > h2 {
   color: white;
@@ -143,12 +136,75 @@ section>img{
 }
 
 /* Media query */
-@media (max-width: 600px) {
-  nav > img {
-    width: 120px;
+@media (max-width: 830px) {
+  body {
+    overflow-x: hidden;
   }
+  .section2 > div > h1 {
+    color: white;
+    font-size: 2.3vw;
+
+    width: 30vw;
+  }
+  .section2 > div > h2 {
+    color: white;
+    width: max-content;
+    width: 30vw;
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 691px) {
+  .overlay {
+    height: 50vh;
+  }
+ 
+ 
+
+
+
   main > section {
-    overflow: hidden;
     padding: 10px;
+  }
+
+  main > section > h1 {
+    font-size: 20px;
+  }
+  main > section > h2 {
+    font-size: 20px;
+  }
+  main > section > h3 {
+    font-size: 15px;
+  }
+
+  section > div {
+    justify-content: center;
+  }
+
+  section > div > input {
+    height: 40px;
+    width: 60%;
+  }
+  section > div > button {
+    height: 40px;
+    width: 90px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .section2 > div {
+    height: 60vw;
+  }
+  section > img {
+    width: 50%;
+    height: 20%;
+  }
+  .section2 > div > h1 {
+    color: white;
+    font-size: 14px;
+  }
+  .section2 > div > h2 {
+    color: white;
+    font-size: 11px;
   }
 }
